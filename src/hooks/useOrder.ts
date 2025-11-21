@@ -14,6 +14,9 @@ export default function useOrder() {
     // Estado de la lista de las ordenes
     const [orderList, setOrderList] = useState<OrderItem[][]>([]);
 
+    // Estado para la manipulacion del menu y orden en mobile
+    const [showOrderMobile, setShowOrderMobile] = useState(false);
+
     // Funcion para agregar los items
     const addItem = (item: MenuItem) => {
         // validar si existe un items ya agregado
@@ -216,6 +219,8 @@ export default function useOrder() {
         placeOrder,
         removeOrderList,
         openOrderModa,
-        isOrderListEmpty
+        isOrderListEmpty,
+        showOrderMobile,
+        setShowOrderMobile
     }
 }

@@ -9,7 +9,7 @@ type OrderlistProps = {
 
 export default function Orderlist({ orderList, isOrderListEmpty, openOrderModa }: OrderlistProps) {
     return (
-        <div className="mt-[64px] flex items-center justify-center gap-2 bg-gray-100 text-gray-900 px-2 py-3 border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700">
+        <div className="mt-[64px] flex items-center justify-center gap-2 bg-gray-100 text-gray-900 px-2 py-3 dark:bg-neutral-800">
             {isOrderListEmpty ? (
                 <>
                     {/*  Mostramos la alerta */}
